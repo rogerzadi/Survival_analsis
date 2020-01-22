@@ -2,24 +2,28 @@
 # Analisis_supervivencia
 Citando Wikipedia "En estadística aplicada, el análisis de supervivencia estudia los procesos aleatorios relacionados con la muerte de organismos vivos y el fallo de sistemas mecánicos"
 
-### Modelos Utilizados
-Se utiliza las siguientes librerias:
-- requests
-- time 
-- BeautifulSoup
-- Asi como tambien se hace uso de Selenium
+### Librerias Utilizadas
+- Plotly
+- Pandas
+- Cufflinks
 
 ## Modelo
+Se usa una base de datos de empleados de una compañia y se hace un analisis de competencia basandonos en el tiempo de vida laboral de los empleados, esto para ver la **relación que guardan las distintas variables** 
+Por ejemplo:
 
-Primero se limpia el dataset de KickStart para ver las variables mas relevantes y las que concuerden con las obtenidas en IDEAME,
-se requiere instalar un driver de Chrome o Firefox para el funcionamiento de Selenium, se utiliza ya que para ver mas proyectos se requiere dar click en "Ver Mas".
+Podemos ver como se compartan las variables de "Departamento" y los "Años en la compañía" en relación a la deserción, la tasa de retención en ventas es más bajo, esto quiere decir que hay mayor rotación en esta área.
 
-El request se hace directamente en la URL de los proyectos donde a cada iteracion se cambia de categoria.
+![gra](https://github.com/rogerzadi/Analisis-supervivencia/blob/master/survival-analysis/images/Dep_a%C3%B1os_comp.png)
 
-El programa tiene 3 variables de entrada con las cuales puedes jugar:
+Se pueden ver variables como la relación entre género y edad de los empleados
 
--URL (Por si se requiere escrapear otra URL)
-- Paginas a scrapear 
-- Veces de clicks en "Ver màs"
+![gra](https://github.com/rogerzadi/Analisis-supervivencia/blob/master/survival-analysis/images/genero_edad.png)
 
-Una vez obtenida la información se guarda en un DataFrame y se concatena con el DataSet inicial de Kickstart
+y así demas variables 
+
+![gra](https://github.com/rogerzadi/Analisis-supervivencia/blob/master/survival-analysis/images/Marital_stat_edad.png)
+![gra](https://github.com/rogerzadi/Analisis-supervivencia/blob/master/survival-analysis/images/GenderMarital_sta_Edad.png)
+![gra](https://github.com/rogerzadi/Analisis-supervivencia/blob/master/survival-analysis/images/genero_Ultima_Pos.png)
+
+En el codigo se pueden ver mas relaciones y sus respectivas gráficas.
+Lo que podemos destacar es ver cual de las relaciones son más siginificativas para tomar acción de estas 
