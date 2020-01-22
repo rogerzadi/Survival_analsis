@@ -1,5 +1,5 @@
 ![Iron Hack](https://github.com/rogerzadi/ModeloSupervivencia/blob/master/images/ironhack.png)
-# Analisis_supervivencia
+# Analisis de supervivencia en empleados de una empresa
 Citando Wikipedia "En estadística aplicada, el análisis de supervivencia estudia los procesos aleatorios relacionados con la muerte de organismos vivos y el fallo de sistemas mecánicos"
 
 ### Librerias Utilizadas
